@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_rounded"
+    android:theme="@style/DialogStyle">
+
+    <TextView
+        android:id="@+id/come"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Algorithm Gateway"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/face_id"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="8dp"
+        android:background="@drawable/back_stroke"
+        android:layout_below="@+id/come">
+
+        <ImageView
+            android:id="@+id/person_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_x"/>
+
+    </RelativeLayout>
+
+<TextView
+    android:id="@+id/not_found_txt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Xodim aniqlanmadi!"
+    android:textColor="#4B4B4B"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:layout_marginTop="16dp"
+    android:textSize="24sp"
+    android:layout_below="@+id/face_id"/>
+
+    <Button
+        android:id="@+id/sell_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/not_found_txt"
+        android:background="@color/newTextColor"
+        android:text="Qaytadan"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

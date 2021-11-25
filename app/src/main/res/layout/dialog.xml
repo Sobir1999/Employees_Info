@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_rounded"
+    android:theme="@style/DialogStyle">
+
+    <TextView
+        android:id="@+id/come"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelish"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/face_id"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="8dp"
+        android:background="@drawable/back_stroke"
+        android:layout_below="@+id/come">
+
+        <ImageView
+            android:id="@+id/person_image"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/face"/>
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/face"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_check"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/face_id"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ism,familya"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ma’mirov Jahongir"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_name2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lavozim"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_content2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sotuv bo’limi raxbari"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_name4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kelgan vaqti:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_content4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12:20:00 08.05.2021"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout4"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_name5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Filliali:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_content5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Andijon filliali"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/totalTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout5"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_marginStart="40dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Umumiy vaqt:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_content6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12:40:00"
+            android:textSize="17sp"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sell_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/totalTime"
+        android:background="@color/newTextColor"
+        android:text="OK"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
